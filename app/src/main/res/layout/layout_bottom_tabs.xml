@@ -1,0 +1,156 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBottomTabsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryLightDark"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/bottomBarBg"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_alignParentLeft="true">
+
+
+        <LinearLayout
+            android:id="@+id/layoutHomeTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--<com.bsetec.boonexgram.ui.CompatTextView
+                android:id="@+id/icHome"
+                android:text="@string/fa_home"
+                style="@style/BottomBarItemStyle"/>-->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutFriendsTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+<!--
+            <com.bsetec.boonexgram.ui.CompatTextView
+                android:id="@+id/icFriends"
+                android:text="@string/fa_users"
+                style="@style/BottomBarItemStyle"/>
+-->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_friends"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layoutAddPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<com.bsetec.boonexgram.ui.CompatTextView
+                android:id="@+id/icAddPost"
+                android:text="@string/fa_plus_square"
+                style="@style/BottomBarItemStyle"/>-->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icAddPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_post"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_notification"
+                />
+            <TextView
+                android:id="@+id/txtMessageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/OOHomeButtonBubble"
+                android:text="0"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+<!--
+            <com.bsetec.boonexgram.ui.CompatTextView
+                android:id="@+id/icProfile"
+                android:text="@string/fa_user"
+                style="@style/BottomBarItemStyle"/>
+-->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_actionbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutActionbar">
+
+        <!--
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipe_newsFeeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/progress_wheel_bottom">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/newfeedsrecycle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+        -->
+
+        <com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout
+            android:id="@+id/swipe_newsFeeds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/newfeedsrecycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout>
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel_bottom"
+            android:layout_width="@dimen/feed_progress_width"
+            android:layout_height="@dimen/feed_progress_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/feed_progress_margin"
+            android:visibility="gone"
+            wheel:matProg_barColor="@color/colorPrimaryInvert"
+            wheel:matProg_barWidth="2dp"
+            wheel:matProg_progressIndeterminate="true" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/noData"
+            style="@style/noDataStyle"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progress_lay"
+        layout="@layout/layout_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></include>
+</RelativeLayout>

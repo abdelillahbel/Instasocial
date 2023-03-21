@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <RelativeLayout
+        android:id="@+id/relativeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:id="@+id/relativeL4Thumb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/prog_prof"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtHading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/relativeL4Thumb"
+                android:visibility="gone"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Posting ..."
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/linearL4Progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHading"
+                android:layout_toRightOf="@+id/relativeL4Thumb"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:weightSum="2"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBarUpload"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_weight="0.2"
+                    android:progressDrawable="@drawable/progresscolor" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

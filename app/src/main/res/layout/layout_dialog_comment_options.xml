@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/bg_rounded_primary_color"
+    android:orientation="vertical">
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/txtEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtCancel"
+        android:layout_toStartOf="@+id/txtCancel"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Edit"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:fontPath="@string/font_roboto_regular" />
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/txtDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEdit"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Delete"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:fontPath="@string/font_roboto_regular" />
+
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/txtCancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="12dp"
+        android:src="@drawable/ic_default_close"
+        android:text="@string/close_icon" />
+</RelativeLayout>

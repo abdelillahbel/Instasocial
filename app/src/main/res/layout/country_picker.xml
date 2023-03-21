@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_country_picker_height"
+        android:background="@color/colorPrimary">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_txt_picker_select_country"
+            android:textSize="16sp"
+
+            app:fontPath="@string/font_roboto_medium"
+
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"/>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtImgBack"
+            android:layout_width="@dimen/dim_country_edt_img_back_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_country_edt_margin_left"
+            android:gravity="center|center_vertical"
+            android:padding="@dimen/dim_country_edt_padding"
+            android:text="@string/fa_arrow_left"
+            app:fontPath="@string/font_fontawesome"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.androidapp.instasocial.ui.CompatEditText
+        android:id="@+id/country_code_picker_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_country_edt_margin"
+        android:singleLine="true"
+        app:fontPath="@string/font_roboto_regular"
+        android:hint="@string/str_txt_picker_search"
+        android:theme="@style/TextInputLayoutStyle"
+        android:textSize="16sp"
+        android:padding="@dimen/dim_country_edt_padding"
+        android:background="@drawable/bg_edt_box"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:imeOptions="actionDone"
+         />
+
+    <ListView
+        android:id="@+id/country_code_picker_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dim_country_picker_list_margin_bottom"
+        android:layout_marginHorizontal="@dimen/dim_country_picker_margin_horizontal"
+        android:layout_weight="1"></ListView>
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/noData"
+        app:fontPath="@string/font_roboto_regular"
+        android:layout_marginBottom="@dimen/dim_country_picker_margin_bottom"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_txt_size"
+        android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/prof_back"
+            android:layout_width="@dimen/prof_bckicon_widthheight"
+            android:layout_height="@dimen/prof_bckicon_widthheight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/prof_topicons_padding_leftright"
+            android:src="@drawable/ic_back" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/like_list_title"
+            style="@style/PageTitleStyle"
+            app:fontPath="@string/font_roboto_medium"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/likePullToRefresh"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/feedLikeList"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+        </com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout>
+      <com.androidapp.instasocial.ui.CompatTextView
+          android:layout_width="match_parent"
+          style="@style/noDataStyle"
+          android:id="@+id/txtNoData"
+          android:visibility="gone"
+          android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>

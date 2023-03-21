@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabs_height"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtPostGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fa_th"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:fontPath="@string/font_fontawesome" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtPostList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fa_th_list"
+            android:textSize="20sp"
+            app:fontPath="@string/font_fontawesome" />
+
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtPhotos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fa_image"
+            android:textSize="20sp"
+            app:fontPath="@string/font_fontawesome" />
+
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fa_film"
+            android:textSize="20sp"
+            app:fontPath="@string/font_fontawesome" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tabs_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/tab_shadow_default" />
+
+</LinearLayout>

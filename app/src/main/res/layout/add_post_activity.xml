@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+   <!-- <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight">
+
+        <com.bsetec.boonexgram.ui.CompatImageView
+            android:id="@+id/close_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:src="@drawable/closeicon"
+            app:filterColor="@color/colorPrimaryInvert"/>
+
+        <com.bsetec.boonexgram.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CAMERA ROLL"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontPath="@string/font_roboto_bold"/>
+
+        <com.bsetec.boonexgram.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10sp"
+            android:text="NEXT"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryLightDark"
+        android:layout_below="@+id/top"
+        android:id="@+id/separator"/>-->
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_linear"
+        android:layout_below="@+id/separator">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/lib_tab"
+            android:background="@drawable/button_bottom_border"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Library"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:fontPath="@string/font_roboto_regular"/>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/photo_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Photo"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            app:fontPath="@string/font_roboto_regular"/>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/video_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Video"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            app:fontPath="@string/font_roboto_regular"/>
+      <!--  <com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/text_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Text"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            app:fontPath="@string/font_roboto_regular"/>-->
+       <!-- <com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/link_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Link"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            app:fontPath="@string/font_roboto_regular"/>-->
+    </LinearLayout>
+
+
+
+</RelativeLayout>

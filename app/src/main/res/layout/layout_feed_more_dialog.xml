@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    android:background="@drawable/bg_rounded_primary_color"
+    android:orientation="vertical">
+
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/txtShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Share"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:fontPath="@string/font_roboto_regular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtShare"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/colorPrimaryLightDark"/>-->
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Edit"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontPath="@string/font_roboto_regular" />
+
+        <View
+            android:id="@+id/divideredit"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLightDark" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Delete"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontPath="@string/font_roboto_regular" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLightDark" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtUnfollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="UnFollow"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontPath="@string/font_roboto_regular" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryLightDark" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Report"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontPath="@string/font_roboto_regular" />
+
+    </LinearLayout>
+
+    <!--<com.bsetec.boonexgram.ui.CompatTextView
+        android:id="@+id/txtDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtShare"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:drawableTop="@color/colorPrimary"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Delete"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:fontPath="@string/font_roboto_regular" />
+-->
+    <!--
+                <com.bsetec.boonexgram.ui.CompatTextView
+                    android:id="@+id/txtLikeList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="View Like List"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+    -->
+
+
+    <!-- <ProgressBar
+         android:id="@+id/loader"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_centerInParent="true"
+         android:indeterminate="true"
+         android:visibility="gone" />-->
+
+    <!--
+        <com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/txtCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/close_icon"
+            android:textColor="@color/colorPrimaryInvert"
+            app:fontPath="@string/font_fontawesome" />
+    -->
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/txtCancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/ic_default_close"
+        android:text="@string/close_icon"
+        app:filterColor="@color/colorPrimary" />
+</RelativeLayout>

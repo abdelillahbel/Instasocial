@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+
+    android:layout_marginLeft="@dimen/del_comm_root_margin_left"
+    android:layout_marginRight="@dimen/del_comm_root_margin_right"
+    android:background="@drawable/bg_rounded_primary_color">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeadercontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/del_com_lay_padding">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/del_com_lay_padding"
+            android:text="Edit Comment"
+            android:gravity="center"
+            android:id="@+id/txtTitle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="@dimen/common_txt_size"
+            app:fontPath="@string/font_roboto_bold"/>
+
+<!--        <com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/imgDialogClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/del_com_lay_padding"
+            android:text="@string/close_icon"
+            android:textColor="@color/colorPrimaryInvert"
+            app:fontPath="@string/font_fontawesome"/>-->
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/imgDialogClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/del_com_lay_padding"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_default_close"
+            />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryLightDark"
+        android:layout_below="@+id/layoutHeadercontent"
+        />
+    <com.androidapp.instasocial.ui.CompatEditText
+
+        style="@style/InputBoxStyle"
+        android:id="@+id/edit_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edt_comm_title_height"
+        android:layout_margin="@dimen/edt_comm_title_margin"
+        android:layout_below="@+id/separator"
+        android:layout_toEndOf="@+id/exit_image"
+        android:layout_toRightOf="@+id/exit_image"
+        android:textColorHint="@color/colorPrimaryLightDark"
+        android:gravity="top|left"
+        android:maxLength="100"
+        android:maxLines="5"
+        android:padding="@dimen/edt_comm_title_padding"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="@dimen/del_com_small_txt_size"
+        app:fontPath="@string/font_roboto_regular"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_list_title"
+        android:orientation="horizontal">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/edt_txt_save_margin_bottom"
+            android:layout_marginTop="@dimen/edt_txt_save_margin_top"
+            android:background="@color/colorPrimaryLightDark"
+            android:gravity="center"
+            android:paddingBottom="@dimen/edt_txt_Save_padding_bottom"
+            android:paddingLeft="@dimen/edt_txt_Save_padding_left"
+            android:paddingRight="@dimen/edt_txt_Save_padding_right"
+            android:paddingTop="@dimen/edt_txt_Save_padding_top"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_txt_size" />
+        <!--android:textColor="@color/default_line_indicator_selected_color"-->
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/linear_horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/bottom_linear"
+        android:background="#D3D3D3"
+        android:visibility="invisible" />
+
+</RelativeLayout>

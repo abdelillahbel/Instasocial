@@ -1,0 +1,238 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<resources>
+
+    <dimen name="margin">10dip</dimen>
+    <dimen name="padding">10dip</dimen>
+    <dimen name="padding2">5dip</dimen>
+
+    <!-- Common container -->
+    <dimen name="cont_margin">@dimen/margin</dimen>
+    <dimen name="cont_padding">@dimen/padding</dimen>
+
+    <!-- "Empty" container -->
+    <dimen name="cont_empty_padding">5pt</dimen>
+    <dimen name="cont_empty_font_size">10pt</dimen>
+
+    <!-- Profile Info -->
+    <dimen name="profile_info_text_size">16dip</dimen>
+    <dimen name="profile_info_title_text_size">18dip</dimen>
+    <dimen name="profile_info_data_margin_top">@dimen/margin</dimen>
+
+    <!-- Home Button -->
+    <dimen name="home_button_bubble_height">22dip</dimen>
+    <dimen name="home_button_bubble_text_size">10dip</dimen>
+    <dimen name="home_button_bubble_padding_top">3dip</dimen>
+    <dimen name="home_button_bubble_padding_bottom">3dip</dimen>
+    <dimen name="home_button_bubble_padding_left">5dip</dimen>
+    <dimen name="home_button_bubble_padding_right">5dip</dimen>
+
+    <!-- news feed -->
+    <dimen name="feed_options_icon_size">23dp</dimen>
+    <dimen name="feed_options_text_size">11dp</dimen>
+    <dimen name="feed_options_space">5dp</dimen>
+
+    <!--Common Items-->
+    <dimen name="common_txt_size">14sp</dimen>
+    <dimen name="common_txt_size_bg">18sp</dimen>
+
+    <!--Comments-->
+    <dimen name="comment_recycler_margin_bottom">5dp</dimen>
+    <dimen name="comment_view_height">1dp</dimen>
+    <dimen name="comment_progress_wheel_height">25dp</dimen>
+    <dimen name="comment_progress_wheel_width">25dp</dimen>
+    <dimen name="comment_progress_wheel_margin">5dp</dimen>
+    <dimen name="comment_edt_comment_padding">10dp</dimen>
+    <dimen name="comment_icon_padding_left">10dp</dimen>
+    <dimen name="comment_icon_padding_right">10dp</dimen>
+    <dimen name="comment_icon_txt_size">18sp</dimen>
+
+    <dimen name="comment_repeat_margin">10dp</dimen>
+    <dimen name="comment_repeat_padding">5dp</dimen>
+    <dimen name="comment_user_image_width">60dp</dimen>
+    <dimen name="comment_user_image_height">40dp</dimen>
+    <dimen name="comment_content_padding">4dp</dimen>
+    <dimen name="comment_action_margin_left">5dp</dimen>
+    <dimen name="comment_action_margin_right">2dp</dimen>
+    <dimen name="comment_action_padding_left">10dp</dimen>
+    <dimen name="comment_txt_size_small">13sp</dimen>
+
+    <!--Delete Comment and Edit comment-->
+    <dimen name="del_comm_root_margin_left">15dp</dimen>
+    <dimen name="del_comm_root_margin_right">15dp</dimen>
+    <dimen name="del_com_lay_padding">7dp</dimen>
+    <dimen name="del_com_title_padding_top">10dp</dimen>
+    <dimen name="del_com_title_padding_bottom">15dp</dimen>
+    <dimen name="del_com_title_padding_left">20dp</dimen>
+    <dimen name="del_com_title_padding_right">20dp</dimen>
+    <dimen name="del_com_small_txt_size">12sp</dimen>
+    <dimen name="del_bottom_lin_padding">5dp</dimen>
+
+    <dimen name="del_action_margin_left">10dp</dimen>
+    <dimen name="del_action_margin_right">10dp</dimen>
+    <dimen name="del_action_padding">5dp</dimen>
+    <dimen name="del_hori_divider">3dp</dimen>
+
+    <dimen name="edt_comm_title_height">75dp</dimen>
+    <dimen name="edt_comm_title_margin">4dp</dimen>
+    <dimen name="edt_comm_title_padding">10dp</dimen>
+    <dimen name="edt_txt_save_margin_bottom">3dp</dimen>
+    <dimen name="edt_txt_save_margin_top">3dp</dimen>
+    <dimen name="edt_txt_Save_padding_bottom">5dp</dimen>
+    <dimen name="edt_txt_Save_padding_top">5dp</dimen>
+    <dimen name="edt_txt_Save_padding_left">25dp</dimen>
+    <dimen name="edt_txt_Save_padding_right">25dp</dimen>
+
+    <!--NewsFeedAdapters-->
+    <dimen name="feed_user_image_margin_top">2dp</dimen>
+    <dimen name="feed_image_load_layout">200dp</dimen>
+    <dimen name="feed_image_loading_icon_width">35dp</dimen>
+    <dimen name="feed_image_loading_icon_height">35dp</dimen>
+    <dimen name="feed_common_image_margin_top">5dp</dimen>
+    <dimen name="feed_event_margin_top">10dp</dimen>
+    <dimen name="feed_event_image_width">120dp</dimen>
+    <dimen name="feed_event_progress_width">20dp</dimen>
+    <dimen name="feed_event_progress_height">20dp</dimen>
+    <dimen name="feed_action_layout_padding">8dp</dimen>
+
+    <!--DiscoverSearch-->
+
+    <dimen name="feed_progress_width">25dp</dimen>
+    <dimen name="feed_progress_height">25dp</dimen>
+    <dimen name="feed_progress_margin">5dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">72dp</dimen>
+    <dimen name="home_sidebar_icons_size">36dp</dimen>
+    <dimen name="actionbarHeight">@dimen/abc_action_bar_default_height_material</dimen>
+    <dimen name="sideBarIconSize">36dp</dimen>
+    <!--<dimen name="sidMenuSize">36dp</dimen>-->
+    <!-- login-->
+    <dimen name="login_horiz_margin">25dp</dimen>
+    <dimen name="login_shadow_margin">15dp</dimen>
+    <dimen name="input_title_text_size">13sp</dimen>
+    <dimen name="input_text_size">16sp</dimen>
+    <dimen name="input_box_margin">20dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+    <dimen name="viewpager_header_height">230dp</dimen>
+    <dimen name="filter_view_spacing">10dp</dimen>
+    <dimen name="editprof_settings_common_txt_size">16sp</dimen>
+    <dimen name="editprof_mainlinear_paddingbottom">10dp</dimen>
+    <dimen name="prof_bckicon_widthheight">45dp</dimen>
+    <dimen name="prof_topicons_padding_leftright">10dp</dimen>
+
+    <!--Login page-->
+    <dimen name="dim_login_logo_size">100dp</dimen>
+    <dimen name="dim_login_logo_margin_top">40dp</dimen>
+    <dimen name="dim_login_logo_txt_margin_top">20dp</dimen>
+    <dimen name="dim_login_margin_top">25dp</dimen>
+    <dimen name="dim_login_padding_vertical">15dp</dimen>
+    <dimen name="dim_login_padding">10dp</dimen>
+    <dimen name="dim_login_txt_margin_top">15dp</dimen>
+    <dimen name="dim_login_txt_margin_bottom">10dp</dimen>
+    <dimen name="dim_login_txt_margin_left">20dp</dimen>
+    <dimen name="dim_login_txt_padding_top">25dp</dimen>
+    <dimen name="dim_login_txt_padding_bottom">20dp</dimen>
+    <dimen name="dim_login_txt_margin_left_txt">5dp</dimen>
+    <dimen name="dim_input_field_padding_left">2dp</dimen>
+    <dimen name="dim_input_field_padding_right">2dp</dimen>
+
+    <!--Register page-->
+    <dimen name="dim_reg_top_linear_margin_top">10dp</dimen>
+    <dimen name="dim_reg_top_linear_padding_vertical">10dp</dimen>
+    <dimen name="dim_reg_profile_img_size">100dp</dimen>
+    <dimen name="dim_reg_view_height">1dp</dimen>
+    <dimen name="dim_reg_view_margin_horizontal">17dp</dimen>
+    <dimen name="dim_reg_view_margin_vertical">3dp</dimen>
+    <dimen name="dim_reg_btn_margin_top">25dp</dimen>
+    <dimen name="dim_reg_btn_padding_vertical">15dp</dimen>
+    <dimen name="dim_reg_btn_padding_bottom">20dp</dimen>
+    <dimen name="dim_reg_btn_padding_top">15dp</dimen>
+    <dimen name="dim_reg_btn_margin_left">5dp</dimen>
+
+    <!--Forgotpassword-->
+    <dimen name="dim_forgot_pass_padding_vertical">15dp</dimen>
+    <dimen name="dim_forgot_pass_padding">10dp</dimen>
+    <dimen name="dim_forgot_pass_margin_top">5dp</dimen>
+    <dimen name="dim_forgot_pass_btn_margin_top">40dp</dimen>
+    <dimen name="dim_forgot_pass_logo_margin_top">30dp</dimen>
+    <dimen name="dim_forgot_pass_logo_size">100dp</dimen>
+
+    <!--Country picker-->
+    <dimen name="dim_country_picker_height">60dp</dimen>
+    <dimen name="dim_country_picker_margin_bottom">60dp</dimen>
+    <dimen name="dim_country_picker_margin_horizontal">10dp</dimen>
+    <dimen name="dim_country_picker_list_margin_bottom">10dp</dimen>
+    <dimen name="dim_country_edt_margin">10dp</dimen>
+    <dimen name="dim_country_edt_padding">10dp</dimen>
+    <dimen name="dim_country_edt_img_back_size">40dp</dimen>
+    <dimen name="dim_country_edt_margin_left">10dp</dimen>
+
+    <!--Country Picker repeat item-->
+    <dimen name="dim_country_picker_repeat_item_padding">10dp</dimen>
+    <dimen name="dim_country_picker_repeat_item_margin_left">10dp</dimen>
+    <dimen name="dim_country_picker_row_icon_size">50dp</dimen>
+
+   <!-- UserSettingsPage-->
+    <dimen name="dim_usr_settings_line_height">15dp</dimen>
+    <dimen name="dim_usr_settings_padding">10dp</dimen>
+    <dimen name="dim_usr_view_height">0.3dp</dimen>
+
+    <!--Changepassword page-->
+    <dimen name="dim_change_pass_margin_top">10dp</dimen>
+   <dimen name="dim_change_pass_margin_horizontal">15dp</dimen>
+    <!--ManualSettingsPage-->
+    <dimen name="dim_manual_settings_view_height">0.5dp</dimen>
+    <dimen name="dim_manual_settings_padding">5dp</dimen>
+    <dimen name="dim_manual_settings_margin_right">5dp</dimen>
+
+    <!--Notification Repeat item -->
+    <dimen name="dim_notifi_repeat_item_margin">12dp</dimen>
+    <dimen name="dim_notify_usr_img_size">50dp</dimen>
+    <dimen name="dim_notify_user_image_one_size">38dp</dimen>
+    <dimen name="dim_notify_margin_left">5dp</dimen>
+    <dimen name="dim_notify_margin_left_txt">-19dp</dimen>
+    
+    
+    <!--Layout feed item -->
+    <dimen name="dim_feed_lay_margin_vertical">5dp</dimen>
+    <dimen name="dim_feed_lay_margin_horizontal">15dp</dimen>
+    <dimen name="dim_feed_lay_margin_top">15dp</dimen>
+    <dimen name="dim_feed_lay_margin_img_user_pic_size">60dp</dimen>
+    <dimen name="dim_feed_lay_margin_left">5dp</dimen>
+    <dimen name="dim_feed_lay_margin_right">10dp</dimen>
+    <dimen name="dim_feed_lay_padding">5dp</dimen>
+    <dimen name="common_icon_txt_size">20sp</dimen>
+    <dimen name="dim_common_more_icon_size">30dp</dimen>
+    <dimen name="dim_common_txt_posted_margin_top">4dp</dimen>
+    <dimen name="dim_common_lay_margin">15dp</dimen>
+    <dimen name="dim_feed_txt_padding">10dp</dimen>
+    <dimen name="dim_feed_txt_margin_bottom">15dp</dimen>
+    <dimen name="dim_feed_txt_margin_left">15dp</dimen>
+    <dimen name="dim_feed_volume_size">23dp</dimen>
+    <dimen name="dim_feed_friend_lay_margin_top">5dp</dimen>
+    <dimen name="dim_feed_padding_vertical">5dp</dimen>
+    <dimen name="dim_feed_padding_left">15dp</dimen>
+    <dimen name="dim_feed_padding_right">10dp</dimen>
+    <dimen name="dim_feed_padding_margin_left">5dp</dimen>
+    <dimen name="dim_feed_icon_margin_right">10dp</dimen>
+    <dimen name="dim_feed_icon_size">26dp</dimen>
+    <dimen name="dim_feed_icon_margin_left">10dp</dimen>
+    <dimen name="dim_feed_view_height">1dp</dimen>
+
+    <!--ProfileFollowingRepeatItem-->
+    <dimen name="dim_profile_following_padding">10dp</dimen>
+    <dimen name="dim_profile_following_margin_left">10dp</dimen>
+    <dimen name="dim_profile_following_img_size">50dp</dimen>
+</resources>
+
+
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:isScrollContainer="true"
+    android:paddingLeft="@dimen/login_horiz_margin"
+    android:paddingRight="@dimen/login_horiz_margin"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/login_horiz_margin"
+        android:paddingRight="@dimen/login_horiz_margin">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dim_login_logo_size"
+            android:layout_height="@dimen/dim_login_logo_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim_login_logo_margin_top"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_login_logo_txt_margin_top"
+            android:orientation="vertical">
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                style="@style/InputTitleStyle"
+                android:text="@string/str_txt_login_usr_name"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/username"
+                    style="@style/InputBoxStyle"
+                    android:hint="@string/str_txt_login_enter_user_name"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                style="@style/InputTitleStyle"
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:text="@string/str_txt_login_password"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/password"
+                    style="@style/InputBoxStyle"
+                    android:layout_height="match_parent"
+
+                    android:hint="@string/str_txt_login_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_login_margin_top"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dim_login_padding_vertical"
+                android:text="@string/str_txt_login_login"
+                android:textColor="@color/white"
+                app:fontPath="@string/font_roboto_regular" />
+
+        </LinearLayout>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtForgotPwd"
+            style="@style/InputTitleStyle"
+            android:gravity="right"
+            android:padding="@dimen/dim_login_padding"
+            android:text="@string/str_txt_login_forgot_password"
+            android:textStyle="italic"
+            app:fontPath="@string/font_roboto_bold" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_login_txt_margin_bottom"
+            android:layout_marginTop="@dimen/dim_login_txt_margin_top"
+            android:gravity="center"
+            android:text="@string/str_txt_login_or"
+            android:textColor="@color/fbBlue"
+            app:fontPath="@string/font_roboto_bold" />
+
+        <LinearLayout
+            android:id="@+id/fb_login_button_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fbBlue"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dim_login_padding_vertical"
+            android:visibility="visible">
+
+            <com.androidapp.instasocial.ui.CompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:src="@drawable/com_facebook_button_icon_blue" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dim_login_txt_margin_left"
+                android:text="@string/str_txt_login_with_facebook"
+                android:textColor="@color/white"
+                app:fontPath="@string/font_roboto_regular" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fb_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_login_txt_padding_bottom"
+            android:paddingTop="@dimen/dim_login_txt_padding_top">
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_txt_login_don_have_acct"
+                android:textColor="@color/colorPrimaryLightDark"
+                app:fontPath="@string/font_roboto_regular" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                style="@style/InputTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_login_txt_margin_left_txt"
+                android:text="@string/str_txt_login_signup"
+                android:textColor="@color/colorPrimary"
+                app:fontPath="@string/font_roboto_bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

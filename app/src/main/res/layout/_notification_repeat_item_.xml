@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/notification_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_notifi_repeat_item_margin">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/imgEye"
+            android:layout_width="@dimen/dim_notify_usr_img_size"
+            android:layout_height="@dimen/dim_notify_usr_img_size"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_eye_two" />
+
+        <LinearLayout
+            android:id="@+id/layoutUserPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_notify_margin_left"
+            android:layout_toRightOf="@+id/imgEye"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser1"
+                android:layout_width="@dimen/dim_notify_user_image_one_size"
+                android:layout_height="@dimen/dim_notify_user_image_one_size"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser2"
+                android:layout_width="@dimen/dim_notify_user_image_one_size"
+                android:layout_height="@dimen/dim_notify_user_image_one_size"
+                android:layout_marginLeft="@dimen/dim_notify_margin_left_txt"
+                android:scaleType="centerCrop"
+
+
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/dim_notify_usr_img_size"
+                android:layout_height="@dimen/dim_notify_usr_img_size"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_notify_margin_left"
+            android:layout_toRightOf="@+id/layoutUserPic"
+            android:layout_toLeftOf="@+id/txtDate"
+            android:orientation="vertical">
+
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="matcorby was live"
+                android:clickable="false"
+                android:textSize="@dimen/input_title_text_size"
+                app:fontPath="@string/font_roboto_regular" />
+
+        </LinearLayout>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtDate"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Dec 16"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/common_txt_size"
+            app:fontPath="@string/font_roboto_regular" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+
+            layout="@layout/layout_actionbar" />
+
+        <RelativeLayout
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/bg_stroke_color_primary"
+
+            android:padding="10dp">
+
+            <com.androidapp.instasocial.ui.CompatImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_action_search"
+                app:filterColor="@color/colorPrimary" />
+
+            <com.androidapp.instasocial.ui.CompatEditText
+                android:id="@+id/edtSearchProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgSearch"
+                android:background="@null"
+                android:hint="@string/str_txt_search_profile"
+                android:imeOptions="actionDone"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorPrimaryInvert"
+                android:textColorHint="@color/colorHint"
+                android:textSize="@dimen/common_txt_size"
+                app:fontPath="@string/font_roboto_regular" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchBar">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/searchProfileList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:paddingHorizontal="10dp" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtNoData"
+                style="@style/noDataStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+            <include layout="@layout/layout_progress_dialog" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <ProgressBar
+            android:id="@+id/loadmore"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_MainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_rela">
+
+        <com.poliveira.apps.parallaxlistview.ParallaxGridView
+            android:id="@+id/parallaxGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:verticalSpacing="2dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txtNoData"
+        style="@style/noDataStyle"
+        android:visibility="gone"/>
+
+</RelativeLayout>

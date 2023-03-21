@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/profile_top_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_header_height"
+        android:layout_below="@+id/top"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/user_profile_coverimage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/user_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:background="#85000000"
+                    android:scaleType="centerCrop" />
+
+                <com.androidapp.instasocial.ui.CompatImageView
+                    android:id="@+id/imgEditAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_edit"
+                    app:filterColor="@color/colorWhite"/>
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/block_unblock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:text="Block"
+                    android:visibility="gone"
+                   android:background="@drawable/btn_white"
+                    app:filterColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/bottomLayout"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <com.androidapp.instasocial.ui.CompatTextView
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User name"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:visibility="visible"
+                        app:fontPath="@string/font_roboto_bold" />
+
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="gender"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="About"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="11sp"
+                        android:visibility="visible" />
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Location"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="11sp"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/txtPrivate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Private Account"
+                        android:maxLines="3"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.07"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtPhotoCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/photoSeperator"
+                            android:layout_toStartOf="@+id/photoSeperator"
+                            android:gravity="left"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtPhotoCount"
+                            android:gravity="left"
+                            android:text="@string/str_posts"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp" />
+
+                        <View
+                            android:id="@+id/photoSeperator"
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/followerLay"
+                        android:layout_weight="0.96"
+                        android:gravity="center"
+                        android:paddingLeft="0dp">
+
+
+                        <TextView
+                            android:id="@+id/txtVideoCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/videoSeparator"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/txtVideoCount"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignRight="@+id/txtVideoCount"
+                            android:layout_below="@+id/txtVideoCount"
+                            android:text="@string/str_followers"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp" />
+
+                        <View
+                            android:id="@+id/videoSeparator"
+                            android:layout_width="1dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/followingLay"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/txtFriendCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtFriendCount"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/str_followings"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.01"
+                        android:gravity="right">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/faAddFriend"
+                            android:layout_margin="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="0dp"
+                            android:visibility="visible"
+                            android:tint="@color/white"
+                            android:src="@drawable/icon_plus"
+                            android:layout_centerInParent="true"
+                            app:backgroundTint="@color/bottomBarIcSelected"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/faUnFriend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="0dp"
+                            android:visibility="gone"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_unfriend_white"
+                            android:layout_centerInParent="true"
+                            app:backgroundTint="@color/bottomBarIcSelected"/>
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/faRequested"
+                            android:layout_margin="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="0dp"
+                            android:visibility="visible"
+                            android:src="@drawable/ic_request"
+                            android:tint="@color/white"
+                            android:layout_centerInParent="true"
+                            app:backgroundTint="@color/bottomBarIcSelected"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

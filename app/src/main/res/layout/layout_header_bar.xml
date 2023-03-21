@@ -1,0 +1,74 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutActionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbarHeight"
+    android:background="@drawable/bg_action_bar">
+
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/icNavigation"
+        android:layout_width="@dimen/actionbarHeight"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        app:filterColor="@color/colorPrimary"
+        android:visibility="visible"
+        android:src="@drawable/ic_back"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtBoonex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"
+            app:fontFamily="@font/lato_bold" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="social"
+            android:textColor="#9e9c96"
+            android:textSize="23sp"
+            android:layout_alignBaseline="@id/txtBoonex"
+            app:fontFamily="@font/lato_bold"/>
+    </LinearLayout>
+
+
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/ic_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorPrimary"
+        android:paddingHorizontal="20dp"
+        android:textSize="20sp"
+        app:fontPath="@string/font_fontawesome"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/more_icon"
+        android:src="@drawable/ic_action_search"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OOScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/OOUniContWholePage"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            style="@style/InputTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_message"
+            android:textAppearance="@style/MyDefaultTextAppearance" />
+
+        <com.androidapp.instasocial.ui.CompatEditText
+            style="@style/InputBoxStyle"
+            android:id="@+id/status_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/OOScreen">
+
+    <LinearLayout style="@style/OOUniContWholePage"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp">
+
+        <com.bsetec.boonexgram.ui.CompatTextView android:layout_width="wrap_content"
+            style="@style/InputTitleStyle"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/MyDefaultTextAppearance"
+            android:text="@string/status_message" />
+
+        <com.bsetec.boonexgram.ui.CompatEditText android:id="@+id/status_message"
+            style="@style/InputBoxStyle"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    -->

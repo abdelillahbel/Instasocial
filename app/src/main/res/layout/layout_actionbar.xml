@@ -1,0 +1,168 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutActionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbarHeight"
+    android:background="@drawable/bg_action_bar"
+    android:clickable="true">
+
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/icNavigation"
+        android:layout_width="@dimen/actionbarHeight"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:filterColor="@color/colorPrimary"
+        android:src="@drawable/ic_action_nav"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+       <!-- <com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryInvert" />-->
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtBoonex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"
+            app:fontFamily="@font/lato_bold" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="social"
+            android:textColor="#9e9c96"
+            android:textSize="23sp"
+            android:layout_alignBaseline="@id/txtBoonex"
+            app:fontFamily="@font/lato_bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutFriendRequest"
+        android:layout_width="@dimen/actionbarHeight"
+        android:layout_height="match_parent"
+       >
+        <!--<com.bsetec.boonexgram.ui.CompatTextView
+            android:id="@+id/icFriendRequest"
+            android:layout_width="@dimen/actionbarHeight"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/fa_user_plus"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="@dimen/home_icons_size"
+            app:fontPath="@string/font_fontawesome"/>-->
+        <ImageView
+            android:id="@+id/icFriendRequest"
+            android:layout_width="@dimen/actionbarHeight"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_action_add_friend"
+            android:padding="16dp"
+            />
+        <TextView
+            android:id="@+id/txtFrndRequestCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_bubble"
+            android:paddingBottom="@dimen/home_button_bubble_padding_bottom"
+            android:paddingLeft="@dimen/home_button_bubble_padding_left"
+            android:visibility="gone"
+            android:paddingRight="@dimen/home_button_bubble_padding_right"
+            android:paddingTop="@dimen/home_button_bubble_padding_top"
+            android:layout_marginTop="@dimen/home_button_bubble_padding_left"
+            android:layout_marginRight="@dimen/home_button_bubble_padding_left"
+            android:text="0"
+            android:textColor="@color/home_button_bubble_text_color"
+            android:textSize="@dimen/home_button_bubble_text_size"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <!--<com.bsetec.boonexgram.ui.CompatTextView
+        android:id="@+id/icSearch"
+        android:layout_width="@dimen/actionbarHeight"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/fa_search"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="@dimen/home_icons_size"
+        app:fontPath="@string/font_fontawesome"/>-->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+
+
+    android:layout_height="wrap_content">
+
+
+
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/icSearch"
+        android:layout_width="@dimen/actionbarHeight"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="visible"
+        android:clickable="true"
+        app:filterColor="@color/colorPrimary"
+        android:src="@drawable/ic_action_search"/>
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/ic_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/icSearch"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        app:fontPath="@string/font_fontawesome"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/more_icon"
+        android:clickable="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_action_search"/>
+</RelativeLayout>
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryLightDark"/>
+-->
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>	    
+    <string name="app_name">Instasocial</string>
+    <string name="close">Закрыть</string>
+    <!-- <string name="x_yo_gender">%s y/o %s</string> -->
+    <string name="status_message">Статус сообщение:</string>
+</resources>

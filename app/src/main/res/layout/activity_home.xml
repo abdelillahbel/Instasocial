@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <!--<include layout="@layout/layout_actionbar" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutActionbar">
+
+
+            <FrameLayout
+                android:id="@+id/tabsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layoutBottomControls" />
+
+            <LinearLayout
+                android:id="@+id/layoutBottomControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/layoutBannerAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+            </LinearLayout>
+            <include
+                android:id="@+id/bottomLayout"
+                layout="@layout/layout_bottom_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbarHeight"
+                android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="@dimen/navigation_drawer_width"
+           android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:background="@drawable/sidebarbackground"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/scrollViewMenu"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/icLogout">
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="1"></TableLayout>
+                </ScrollView>
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/icLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/navigation_drawer_width"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="@string/fa_sign_out"
+                    android:textColor="#9C9C9C"
+                    android:textSize="@dimen/home_sidebar_icons_size"
+                    app:fontPath="@string/font_fontawesome" />
+            </RelativeLayout>
+        </android.support.design.widget.NavigationView>
+
+<!--
+    </android.support.v4.widget.DrawerLayout>
+-->
+
+    <FrameLayout
+        android:id="@+id/activity_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

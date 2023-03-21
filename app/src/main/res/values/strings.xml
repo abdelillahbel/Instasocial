@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<resources>
+    <string name="app_name">Instasocial</string>
+    <string name="facebook_app_id">2237767833113716</string>
+
+    <!--admob app id-->
+    <string name="admob_app_id">ca-app-pub-7444360233610496~1153730342</string>
+    <!--original ad unit-->
+    <string name="admob_banner_ad_id"  translatable="false">ca-app-pub-7444360233610496/9523190864</string>
+
+    <!--original ad unit-->
+    <string name="admob_interstitial_ad_id"  translatable="false">ca-app-pub-7444360233610496/6670630960</string>
+
+    <!--original ad unit-->
+    <string name="admob_reward_ad_id" translatable="false">ca-app-pub-7444360233610496/9209148484</string>
+
+    <!--changes-->
+    <string name="font_fontawesome">fonts/fontawesome-webfont.ttf</string>
+    <string name="font_roboto_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_roboto_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_norican_regular">fonts/Norican-Regular.ttf</string>
+    <string name="noNet">Please check your internet connection</string>
+    <string name="close">Close</string>
+    <string name="status_message">Status Message:</string>
+    <string name="upload_img">Upload Your Photo</string>
+
+
+    <!--Font awesome Icons -->
+    <string name="like_icon">&#xf004;</string>
+    <string name="unlike_icon">&#xf08a;</string>
+    <string name="close_icon">&#xf00d;</string>
+    <string name="clock_icon">&#xf017;</string>
+    <string name="more_icon">&#xf142;</string>
+    <string name="noData">Empty</string>
+    <string name="sendIcon">&#xf1d8;</string>
+    <string name="handShakeIcon">&#xf2b5;</string>
+    <string name="fa_arrow_left">&#xf060;</string>
+    <string name="fa_th_list">&#xf00b;</string>
+    <string name="fa_grip_horizontal">&#xf58d;</string>
+    <string name="fa_th">&#xf00a;</string>
+    <string name="fa_film">&#xf008;</string>
+    <string name="fa_image">&#xf03e;</string>
+    <string name="fa_sign_out">&#xf08b;</string>
+    <string name="fa_video_camera">&#xf03d;</string>
+
+    <!--Login Activity-->
+    <string name="str_txt_login_usr_name">User name </string>
+    <string name="str_txt_login_enter_user_name">Enter user name/email</string>
+    <string name="str_txt_login_password">Password</string>
+    <string name="str_txt_login_login">Login</string>
+    <string name="str_txt_login_forgot_password">Forgot password?</string>
+    <string name="str_txt_login_or">or</string>
+    <string name="str_txt_login_with_facebook">Login with facebook</string>
+    <string name="str_txt_login_don_have_acct">Don\'t have an account?</string>
+    <string name="str_txt_login_signup">Signup</string>
+
+    <!--Register page-->
+    <string name="str_txt_reg_first_name">First name</string>
+    <string name="str_txt_reg_last_name">Last name</string>
+    <string name="str_txt_reg_email">Email address</string>
+    <string name="str_txt_user_name">User name </string>
+    <string name="str_txt_password">Password</string>
+    <string name="str_txt_conf_password">Confirm password</string>
+    <string name="str_txt_reg_create_account">Create account</string>
+    <string name="str_txt_reg_already_have_account">Already have an account?</string>
+    <string name="str_txt_reg_sign_in">Sign In</string>
+    <string name="str_txt_reg_gender">Gender</string>
+    <string name="str_txt_reg_unspecify">Unspecified</string>
+    <string name="str_txt_reg_male">Male</string>
+    <string name="str_txt_reg_female">Female</string>
+    <string name="str_txt_reg_inter">Intersex</string>
+    <string name="str_txt_reg_description">Description (150 characters long)</string>
+    <string name="str_txt_reg_country">Country</string>
+    <string name="str_txt_reg_state">State</string>
+    <string name="str_txt_reg_dob">Enter Date of Birth</string>
+
+   <!-- Country picker-->
+    <string name="str_txt_picker_select_country">Select country</string>
+    <string name="str_txt_picker_search">Search</string>
+
+<!--
+    forgotPassword
+-->
+    <string name="str_txt_forgot_pass">Forgot password</string>
+    <string name="str_txt_forgot_email">Email address</string>
+    <string name="str_txt_forgot_submit">Submit</string>
+    <string name="str_txt_forgot_back_to_login">Back to login</string>
+    <string name="str_txt_forgot_email_empty">Email address is empty</string>
+    <string name="str_txt_forgot_valid_email_empty">Please enter valid email-id</string>
+   <string name="str_txt_try_again_msg">Try Again</string>
+
+    <!--Message - Login -->
+    <string name="str_msg_login_empty_email">Email address is empty</string>
+    <string name="str_msg_login_empty_password">Password is empty</string>
+    <string name="str_msg_login_valid_email">Please enter valid email/username</string>
+    <string name="str_msg_login_valid_password">The password should be atleast 6 characters </string>
+
+    <!--Message Register-->
+    <string name="str_msg_reg_empty_first_name">First name is empty</string>
+    <string name="str_msg_reg_empty_last_name">Last name is empty</string>
+    <string name="str_msg_reg_empty_email">Email is empty</string>
+    <string name="str_msg_reg_valid_email">Please enter valid email id</string>
+    <string name="str_msg_reg_empty_username">Please enter user name</string>
+    <string name="str_msg_reg_country_name">Please select country</string>
+    <string name="str_msg_reg_state_name">State is empty</string>
+    <string name="str_msg_reg_pass_empty">Password is empty</string>
+    <string name="str_msg_reg_pass_confirm_empty">Confirm password is empty</string>
+    <string name="str_msg_reg_pass_not_equal">Password and confirm password not match</string>
+    <string name="str_msg_reg_dob_empty">Date of birth is empty</string>
+    <string name="str_msg_reg_desc_empty">Description is empty</string>
+
+    <!--UserSettingsFragment-->
+    <string name="str_user_setting_edt_profile">Edit profile</string>
+    <string name="str_privacy_policy">Privacy policy</string>
+    <string name="str_terms">Terms</string>
+    <string name="str_user_setting">Update settings </string>
+    <string name="str_user_setting_change_password">Change password</string>
+    <string name="str_user_setting_settings">Settings</string>
+    <string name="str_user_settings_follow_request">Follow Request</string>
+    <string name="str_user_settings_joined_group">Joined Group</string>
+    <string name="str_user_settings_blocked">Block list</string>
+    <string name="str_blocked_user">Blocked User</string>
+    <string name="str_user_settings_logout">Logout</string>
+    <string name="str_blocked_list">Blocked list</string>
+    <string name="str_blocked">Blocked</string>
+    <string name="str_unblock">UnBlock</string>
+
+    <!--Change password-->
+    <string name="str_txt_change_password">Change password</string>
+    <string name="str_txt_change_new_password">New password</string>
+    <string name="str_txt_change_old_password">Old password</string>
+    <string name="str_txt_change_confirm_password">Confirm password</string>
+    <string name="str_txt_change_submit">Submit</string>
+    <string name="str_update">Update</string>
+
+    <string name="str_msg_new_pass_empty">New password is empty</string>
+    <string name="str_msg_old_pass_empty">Old password is empty</string>
+    <string name="str_msg_new_conf_pass_empty">Confirm password is empty</string>
+    <string name="str_msg_pass_do_not_match">Passwords do not match</string>
+    <string name="str_msg_pass_new_length">New passwords should not be less than 6 characters</string>
+    <string name="str_msg_pass_old_length">Old passwords should not be less than 6 characters</string>
+
+    <!--ManualSettings-->
+    <string name="str_manual_setting_txt_setting">Settings</string>
+    <string name="str_manual_setting_receive_push_notification">Receive Push Notification</string>
+    <string name="str_manual_setting_is_private">Private Account</string>
+
+    <!--Update profile -->
+    <string name="str_edit_profile_btn">Update profile</string>
+
+    <!--SignInFaceBook-->
+    <string name="str_sign_in_facebook">SIGN IN WITH FACEBOOK</string>
+
+    <!--Followers and followings-->
+    <string name="str_txt_follow_no_data">No followers</string>
+    <string name="str_txt_following_no_data">No followings</string>
+    <string name="str_txt_search_profile">Search profile...</string>
+    <string name="str_txt_follow_success">You followed successfully</string>
+    <string name="str_txt_un_follow_success">You unfollowed successfully</string>
+    <string name="str_txt_request_success">You requested successfully</string>
+    <string name="str_txt_accept_request">You accepted the request</string>
+    <string name="str_txt_decline_request">You declined the request</string>
+    <string name="str_txt_unblock_user">You unblocked successfully</string>
+    <string name="str_followers">Followers</string>
+    <string name="str_followings">Following</string>
+    <string name="str_posts">Posts</string>
+    <string name="str_follow_request">Follow request</string>
+    <string name="des_issue">Describe the issue</string>
+    <string name="str_requested">Already requested</string>
+
+    <!-- Like List -->
+    <string name="like_list_title">Like List</string>
+
+    <!--Notification-->
+    <string name="notification_following_tab">FOLLOWING</string>
+    <string name="notification_you_tab">YOU</string>
+</resources>

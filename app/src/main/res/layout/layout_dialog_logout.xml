@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFF0F1"
+    android:layout_centerHorizontal="true"
+
+    >
+
+    <ImageView
+        android:id="@+id/exit_image"
+        android:src="@drawable/icon_warning"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/bottom_divider" />
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/edit_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:text="Are you sure you want to logout from the app ??"
+        android:textAlignment="gravity"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/exit_image"
+        android:layout_toEndOf="@+id/exit_image" />
+
+
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_list_title"
+
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_divider"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textColor="@color/dark_sky_blue"
+            android:textSize="14sp" />
+        <!--android:textColor="@color/default_line_indicator_selected_color"-->
+        <View
+            android:id="@+id/linear_vertical_divider"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:background="#D3D3D3" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:text="No"
+            android:textColor="@color/pink"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linear_horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/bottom_linear"
+        android:background="#D3D3D3"
+        android:visibility="invisible" />
+
+</RelativeLayout>

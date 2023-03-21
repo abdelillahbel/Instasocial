@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/notification_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_notifi_repeat_item_margin">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/imgEye"
+            android:layout_width="@dimen/dim_notify_usr_img_size"
+            android:layout_height="@dimen/dim_notify_usr_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_eye_two" />
+
+        <LinearLayout
+            android:id="@+id/layoutUserPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_notify_margin_left"
+            android:layout_toRightOf="@+id/imgEye"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser1"
+                android:layout_width="@dimen/dim_notify_user_image_one_size"
+                android:layout_height="@dimen/dim_notify_user_image_one_size"
+                android:scaleType="centerCrop"
+
+
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser2"
+                android:layout_width="@dimen/dim_notify_user_image_one_size"
+                android:layout_height="@dimen/dim_notify_user_image_one_size"
+                android:layout_marginLeft="@dimen/dim_notify_margin_left_txt"
+                android:scaleType="centerCrop"
+
+
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/dim_notify_usr_img_size"
+                android:layout_height="@dimen/dim_notify_usr_img_size"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_notify_margin_left"
+            android:layout_toRightOf="@+id/layoutUserPic"
+            android:layout_toLeftOf="@+id/txtDate"
+            android:orientation="vertical">
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 people watched your replay"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/common_txt_size"
+                app:fontPath="@string/font_roboto_regular" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="matcorby was live"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/del_com_small_txt_size"
+                app:fontPath="@string/font_roboto_regular" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 hour ago"
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/del_com_small_txt_size"
+                app:fontPath="@string/font_roboto_regular" />
+
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@+id/layoutUserPic"
+            android:layout_toLeftOf="@+id/liked_post"
+            android:layout_below="@+id/layoutMessage"
+            android:layout_marginTop="@dimen/dim_notifi_repeat_item_margin"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/postPhotoImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+<!--
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/audioGif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:visibility="gone"/>
+-->
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/liked_post"
+            android:visibility="visible"
+            android:src="@drawable/ic_eye_two"
+             android:layout_width="@dimen/dim_notify_usr_img_size"
+            android:layout_height="@dimen/dim_notify_usr_img_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/login_bg"
+    android:paddingLeft="@dimen/login_horiz_margin"
+    android:paddingRight="@dimen/login_horiz_margin"
+    android:windowActionBar="false"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/login_horiz_margin"
+        android:paddingRight="@dimen/login_horiz_margin">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbarHeight">
+
+
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_txt_forgot_pass"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:fontPath="@string/font_roboto_bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/dim_forgot_pass_logo_size"
+                android:layout_height="@dimen/dim_forgot_pass_logo_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_forgot_pass_btn_margin_top"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="@dimen/dim_forgot_pass_logo_margin_top"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtInputLayForgotMail"
+                    android:layout_marginTop="@dimen/input_box_margin"
+
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle">
+                <com.androidapp.instasocial.ui.CompatEditText
+                    style="@style/InputBoxStyle"
+                    android:id="@+id/forgot_username_edittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/str_txt_forgot_email"
+                    android:singleLine="true"
+                    android:textSize="@dimen/input_text_size" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/forgot_save_btn"
+                    android:layout_below="@+id/txtInputLayForgotMail"
+                    android:layout_marginTop="@dimen/dim_forgot_pass_btn_margin_top"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/dim_forgot_pass_padding_vertical"
+                    android:text="@string/str_txt_forgot_submit"
+                    android:textColor="@color/white"
+                    app:fontPath="@string/font_roboto_regular" />
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/txtBackToLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_txt_forgot_back_to_login"
+                    android:gravity="center"
+                    android:padding="@dimen/dim_forgot_pass_padding"
+                    android:layout_marginTop="@dimen/dim_forgot_pass_margin_top"
+                    android:layout_below="@+id/forgot_save_btn"
+                    android:textColor="@color/colorPrimaryLightDark"
+                    app:fontPath="@string/font_roboto_regular" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

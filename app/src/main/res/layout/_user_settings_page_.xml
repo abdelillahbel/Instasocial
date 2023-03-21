@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/user_sett_back"
+            android:layout_width="@dimen/prof_bckicon_widthheight"
+            android:layout_height="@dimen/prof_bckicon_widthheight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/prof_topicons_padding_leftright"
+            android:src="@drawable/ic_back"
+            app:filterColor="@color/colorPrimary" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            style="@style/PageTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_user_setting_settings"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            app:fontPath="@string/font_roboto_bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/v_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_usr_settings_line_height"
+        android:layout_below="@+id/layoutActionbar"
+        android:background="@color/search_gray"
+        android:orientation="vertical"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_linear">
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/editprof_mainlinear_paddingbottom">
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_setting_edt_profile"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/chg_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_setting_change_password"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:id="@+id/view_chg_pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/update_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_setting"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/follow_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_settings_follow_request"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray"
+                android:visibility="visible" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/joined_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_settings_joined_group"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                android:visibility="gone"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/blocked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_settings_blocked"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                android:visibility="visible"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/layoutActionbar"
+                android:background="@color/search_gray"
+                android:orientation="vertical"/>
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_privacy_policy"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                android:visibility="visible"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/layoutTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dim_usr_settings_padding"
+                    android:text="@string/str_terms"
+                    android:textColor="@color/colorPrimaryInvert"
+                    android:textSize="@dimen/editprof_settings_common_txt_size"
+                    app:fontPath="@string/font_roboto_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_usr_view_height"
+                    android:background="@color/light_gray" />
+            </LinearLayout>
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_usr_settings_padding"
+                android:text="@string/str_user_settings_logout"
+                android:textColor="@color/colorPrimaryInvert"
+                android:textSize="@dimen/editprof_settings_common_txt_size"
+                app:fontPath="@string/font_roboto_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_usr_view_height"
+                android:background="@color/light_gray" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

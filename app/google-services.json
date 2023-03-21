@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "488733692840",
+    "firebase_url": "https://instaplus-7eebb.firebaseio.com",
+    "project_id": "instaplus-7eebb",
+    "storage_bucket": "instaplus-7eebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488733692840:android:d7238b50ee6968ae",
+        "android_client_info": {
+          "package_name": "com.androidapp.instaplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488733692840-tk9pmos0nk21vkkej583vt48991hqbqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidapp.instaplus",
+            "certificate_hash": "95cd8d00a7077133426c5e858d5ca551fcc8c799"
+          }
+        },
+        {
+          "client_id": "488733692840-k3gerrjf5af90aouc8pin2mrkgdhn6jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAFFLhUO9DII4o-iIsbzwBhnJPYr3oUbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488733692840-k3gerrjf5af90aouc8pin2mrkgdhn6jp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "488733692840-he71brcvdd5gmkkkk653o591hvhnrfgp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bsetec.instasocial"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488733692840:android:4a87bba211327705",
+        "android_client_info": {
+          "package_name": "com.androidapp.instasocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488733692840-djupcj2ls782jnoe1jpr3nmcor8nf6cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidapp.instasocial",
+            "certificate_hash": "95cd8d00a7077133426c5e858d5ca551fcc8c799"
+          }
+        },
+        {
+          "client_id": "488733692840-k3gerrjf5af90aouc8pin2mrkgdhn6jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAFFLhUO9DII4o-iIsbzwBhnJPYr3oUbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488733692840-k3gerrjf5af90aouc8pin2mrkgdhn6jp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "488733692840-he71brcvdd5gmkkkk653o591hvhnrfgp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bsetec.instasocial"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

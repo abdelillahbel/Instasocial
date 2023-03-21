@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg_rounded_primary_color"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/del_comm_root_margin_left"
+    android:layout_marginRight="@dimen/del_comm_root_margin_right">
+
+<RelativeLayout
+    android:id="@+id/layoutHeadercontent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/del_com_lay_padding"
+    android:background="@color/colorWhite">
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/del_com_lay_padding"
+        android:id="@+id/deleteHead"
+        android:text="DELETE COMMENT"
+        android:textSize="@dimen/common_txt_size"
+        android:textColor="@color/colorPrimary"
+        app:fontPath="@string/font_roboto_bold"/>
+    <!--<com.bsetec.boonexgram.ui.CompatTextView
+        android:id="@+id/imgDialogClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close_icon"
+        android:textColor="@color/colorPrimaryInvert"
+        android:padding="@dimen/del_com_lay_padding"
+        android:layout_alignParentRight="true"
+        app:fontPath="@string/font_fontawesome"/>-->
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:id="@+id/imgDialogClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="@dimen/del_com_lay_padding"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_default_close"
+        />
+</RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryLightDark"
+        android:layout_below="@+id/layoutHeadercontent"
+        />
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/edit_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/del_com_title_padding_left"
+        android:paddingRight="@dimen/del_com_title_padding_right"
+        android:paddingTop="@dimen/del_com_title_padding_top"
+        android:paddingBottom="@dimen/del_com_title_padding_bottom"
+        android:text="Are you sure you want to delete this comment ?"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textSize="@dimen/del_com_small_txt_size"
+        android:layout_below="@+id/separator"
+        android:layout_toRightOf="@+id/exit_image"
+        android:layout_toEndOf="@+id/exit_image" />
+
+
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_list_title"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:padding="@dimen/del_bottom_lin_padding"
+
+        android:layout_below="@+id/bottom_divider"
+        android:orientation="horizontal">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/del_action_margin_left"
+            android:layout_marginRight="@dimen/del_action_margin_right"
+
+            android:background="@color/colorPrimary"
+            android:text="Delete"
+            android:padding="@dimen/del_action_padding"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_txt_size" />
+        <!--android:textColor="@color/default_line_indicator_selected_color"-->
+
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/btn_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Cancel"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/del_action_margin_left"
+            android:layout_marginRight="@dimen/del_action_margin_right"
+              android:padding="@dimen/del_action_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_txt_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linear_horizontal_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/del_hori_divider"
+        android:layout_below="@+id/bottom_linear"
+        android:background="#D3D3D3"
+        android:visibility="invisible" />
+
+</RelativeLayout>

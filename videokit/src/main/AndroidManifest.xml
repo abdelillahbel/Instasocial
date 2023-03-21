@@ -1,0 +1,20 @@
+<!--
+  ~ /*
+  ~  Company : Bsetec
+  ~  Product: Instasocial
+  ~  Email : support@bsetec.com
+  ~  Copyright © 2018 BSEtec. All rights reserved.
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.selfishare.videokit">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/bg_action_bar</item>
+        <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+        <item name="android:elevation">0dp</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/bg_action_bar</item>
+        <item name="titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+        <item name="elevation">0dp</item>
+    </style>
+</resources>

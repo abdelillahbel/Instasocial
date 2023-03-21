@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/close_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="11dp"
+            android:src="@drawable/closeicon"
+            app:filterColor="@color/colorPrimaryInvert" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TEXT POST"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontPath="@string/font_roboto_bold" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/nxt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10sp"
+            android:text="Next"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top"
+        android:background="@color/colorPrimaryLightDark" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/separator"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtTxtTitle"
+            style="@style/InputTitleStyle"
+            android:text="Post Text" />
+
+        <com.androidapp.instasocial.ui.CompatEditText
+            android:id="@+id/editTextPost"
+            style="@style/InputBoxStyle"
+            android:layout_height="100dp"
+            android:minLines="1"
+            android:maxLines="4"
+            android:lines="3"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/txtTxtTitle"
+            android:hint="write something"
+            android:inputType="text|textMultiLine"
+            />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="@color/fbBlue"
+            app:fontPath="@string/font_roboto_bold" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtLinkTitle"
+            style="@style/InputTitleStyle"
+            android:layout_below="@id/editTextPost"
+            android:text="Post Link" />
+
+        <com.androidapp.instasocial.ui.CompatEditText
+            android:id="@+id/editLinkPost"
+            style="@style/InputBoxStyle"
+            android:layout_below="@+id/txtLinkTitle"
+            android:hint="http://example.com"
+            android:inputType="text"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

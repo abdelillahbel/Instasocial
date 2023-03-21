@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="@dimen/dim_notify_usr_img_size"
+        android:layout_height="@dimen/dim_notify_usr_img_size"
+        android:layout_marginRight="@dimen/dim_notifi_repeat_item_margin"
+        >
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/imgGroupImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgVideoIcon"
+            android:textColor="@color/pink"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

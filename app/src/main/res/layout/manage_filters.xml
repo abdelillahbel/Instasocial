@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <ImageView
+            android:id="@+id/doneBtn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_tick"
+            android:tint="@color/colorPrimaryInvert" />
+
+        <TextView
+            android:id="@+id/head_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="MANAGE"
+            android:layout_toRightOf="@id/doneBtn"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimaryInvert"
+            style="@style/MyActionBar.TitleTextStyle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top"
+        android:background="@color/colorPrimaryInvert" />
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/panel1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img1"
+                    android:paddingLeft="15dp"
+                    android:text="panel1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img2"
+                    android:paddingLeft="15dp"
+                    android:text="panel2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img3"
+                    android:paddingLeft="15dp"
+                    android:text="panel3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img4"
+                    android:paddingLeft="15dp"
+                    android:text="panel4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img5"
+                    android:paddingLeft="15dp"
+                    android:text="panel5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel6_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img6"
+                    android:paddingLeft="15dp"
+                    android:text="panel6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel7_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img7"
+                    android:paddingLeft="15dp"
+                    android:text="panel7"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v7"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel8_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img8"
+                    android:paddingLeft="15dp"
+                    android:text="panel8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v8"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel9_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img9"
+                    android:paddingLeft="15dp"
+                    android:text="panel9"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk9"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v9"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel10_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img10"
+                    android:paddingLeft="15dp"
+                    android:text="panel10"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v10"
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel11_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img11"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img11"
+                    android:paddingLeft="15dp"
+                    android:text="panel11"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel12_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img12"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel12"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img12"
+                    android:paddingLeft="15dp"
+                    android:text="panel12"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk12"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel13_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img13"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel13"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img13"
+                    android:paddingLeft="15dp"
+                    android:text="panel13"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel14_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img14"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel14"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img14"
+                    android:paddingLeft="15dp"
+                    android:text="panel14"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel15_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img15"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel15"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img15"
+                    android:paddingLeft="15dp"
+                    android:text="panel15"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel16_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img16"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img16"
+                    android:paddingLeft="15dp"
+                    android:text="panel16"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel17_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img17"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel17"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img17"
+                    android:paddingLeft="15dp"
+                    android:text="panel17"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v17"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel18_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img18"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel18"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img18"
+                    android:paddingLeft="15dp"
+                    android:text="panel18"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v18"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel19_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img19"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel19"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img19"
+                    android:paddingLeft="15dp"
+                    android:text="panel19"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v19"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_color_login" />
+
+            <RelativeLayout
+                android:id="@+id/panel20_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/img20"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/txtPanel20"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img20"
+                    android:paddingLeft="15dp"
+                    android:text="panel20"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    android:paddingRight="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

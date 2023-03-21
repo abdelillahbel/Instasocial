@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg_rounded_primary_color"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/del_comm_root_margin_left"
+    android:layout_marginRight="@dimen/del_comm_root_margin_right">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeadercontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/del_com_lay_padding"
+        android:background="@color/colorWhite">
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/del_com_lay_padding"
+            android:id="@+id/deleteHead"
+            android:text="REPORT"
+            android:textSize="@dimen/common_txt_size"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            app:fontPath="@string/font_roboto_bold"/>
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/imgDialogClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/del_com_lay_padding"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_default_close"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryLightDark"
+        android:layout_below="@+id/layoutHeadercontent"
+        />
+    <LinearLayout
+        android:id="@+id/reportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:layout_below="@+id/separator"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:matProg_barWidth="2dp"
+        app:matProg_barColor="@color/colorPrimaryDark"
+        app:matProg_progressIndeterminate="true"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

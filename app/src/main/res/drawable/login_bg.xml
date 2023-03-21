@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="@dimen/login_shadow_margin"
+        android:right="@dimen/login_shadow_margin"
+        android:top="@dimen/login_shadow_margin">
+        <shape android:shape="rectangle">
+
+            <gradient
+                android:angle="0"
+                android:centerColor="@color/white"
+                android:endColor="@android:color/transparent"
+                android:startColor="@android:color/transparent"
+                android:type="linear" />
+
+            <!--
+                        <corners android:topLeftRadius="@dimen/login_horiz_margin"
+                            android:topRightRadius="@dimen/login_horiz_margin"/>
+            -->
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/login_horiz_margin"
+        android:right="@dimen/login_horiz_margin"
+        android:top="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

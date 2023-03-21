@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/close_icon">
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/txtComments"
+                style="@style/MyActionBar.TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+
+                android:text="Comments"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryInvert" />
+
+        </RelativeLayout>
+
+        <!-- <com.bsetec.boonexgram.ui.CompatTextView
+             android:id="@+id/close_icon"
+             android:layout_width="@dimen/actionbarHeight"
+             android:layout_height="match_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+             android:text="@string/backIcon"
+             android:textColor="@color/colorPrimaryInvert"
+             android:textSize="@dimen/common_icon_size"
+             app:fontPath="@string/font_fontawesome" />-->
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/close_icon"
+            android:layout_width="@dimen/actionbarHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="14dp"
+            android:src="@drawable/ic_default_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+        android:background="@color/colorPrimary">
+
+        <!--<in.srain.cube.views.ptr.PtrFrameLayout-->
+        <!--android:id="@+id/swipeComments"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/view"-->
+        <!--app:ptr_duration_to_close="200"-->
+        <!--app:ptr_duration_to_close_header="1000"-->
+        <!--app:ptr_keep_header_when_refresh="true"-->
+        <!--app:ptr_pull_to_fresh="false"-->
+        <!--app:ptr_ratio_of_header_height_to_refresh="1.2"-->
+        <!--app:ptr_resistance="1.7">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/commentsRecycle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/comment_recycler_margin_bottom" />-->
+
+        <!--</in.srain.cube.views.ptr.PtrFrameLayout>-->
+
+        <com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout
+            android:id="@+id/swipeComments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/commentsRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/comment_recycler_margin_bottom" />
+
+        </com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout>
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/noData"
+            style="@style/noDataStyle"
+            android:layout_marginTop="30dp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_view_height"
+            android:layout_above="@+id/bottomLayout"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbarHeight"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress_wheel_bottom"
+                android:layout_width="@dimen/comment_progress_wheel_width"
+                android:layout_height="@dimen/comment_progress_wheel_height"
+                android:layout_above="@+id/addCommentLay"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/comment_progress_wheel_margin"
+                android:visibility="gone"
+                app:matProg_barColor="@color/colorPrimary"
+                app:matProg_barWidth="2dp"
+                app:matProg_progressIndeterminate="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/edtCommentTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/actionbarHeight"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/iconLay"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="Write A Message..."
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLines="3"
+                        android:padding="@dimen/comment_edt_comment_padding"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryInvert"
+                        android:textColorHint="@color/colorPrimaryLightDark"
+                        android:textSize="@dimen/common_txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/iconLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_alignParentRight="true">
+
+                        <com.androidapp.instasocial.ui.CompatTextView
+                            android:id="@+id/cmtAddText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/comment_icon_padding_left"
+                            android:paddingRight="@dimen/comment_icon_padding_right"
+                            android:text="@string/sendIcon"
+                            android:textColor="@color/colorPrimaryLightDark"
+                            android:textSize="@dimen/comment_icon_txt_size"
+                            app:fontPath="@string/font_fontawesome" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.androidapp.instasocial.ui.CompatTextView
+                        android:id="@+id/add_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="    Send    "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_txt_size" />
+
+                    <com.androidapp.instasocial.ui.CompatTextView
+                        android:id="@+id/txtCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:text="  Cancel  "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_txt_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progress_lay"
+        layout="@layout/layout_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

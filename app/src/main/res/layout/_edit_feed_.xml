@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_margin="10dp"
+
+       android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+        android:layout_margin="10dp"
+       android:layout_height="wrap_content">
+
+    <com.androidapp.instasocial.ui.TextureVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <com.androidapp.instasocial.ui.ScaleImageView
+        android:id="@+id/image_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+   </RelativeLayout>
+    <com.androidapp.instasocial.ui.CompatEditText
+        android:layout_width="match_parent"
+        android:hint="Post text"
+        android:id="@+id/edtPostText"
+        android:background="@null"
+        android:textColor="@color/colorPrimaryInvert"
+        android:textColorHint="@color/light_gray"
+        android:padding="5dp"
+        app:fontPath="@string/font_roboto_medium"
+
+        android:layout_height="wrap_content" />
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:id="@+id/txtSubmit"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/common_txt_size"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+   </LinearLayout>
+
+   </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <com.fenchtose.nocropper.CropperView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff282828"
+        android:layout_marginTop="20dp"
+        app:grid_color="@color/action_bar_color"
+        app:grid_opacity="0.8"
+        app:grid_thickness="0.8dp" />
+
+
+    <ImageView
+        android:id="@+id/snap_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/black_transp_circ_ripple"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_crop_free_white_24dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/crop_button"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedbluecorner"
+        android:text="CROP"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/rotate_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/black_transp_circ_ripple"
+        android:padding="8dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_rotate_right_white_24dp"
+        android:visibility="visible" />
+</RelativeLayout>

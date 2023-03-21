@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/followTab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tabsbg"
+            android:gravity="center"
+            android:text="Followers"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:fontPath="@string/font_roboto_regular" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/followingTab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Followings"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:fontPath="@string/font_roboto_regular" />
+    </LinearLayout>
+    <com.androidapp.instasocial.ui.NonScrollableViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/followViewPager"
+        android:layout_height="match_parent">
+
+    </com.androidapp.instasocial.ui.NonScrollableViewPager>
+
+</LinearLayout>

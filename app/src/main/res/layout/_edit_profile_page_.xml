@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_master_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:clickable="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/layoutActionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbarHeight"
+            android:background="@drawable/bg_action_bar">
+
+            <com.androidapp.instasocial.ui.CompatImageView
+                android:id="@+id/user_sett_back"
+                android:layout_width="@dimen/prof_bckicon_widthheight"
+                android:layout_height="@dimen/prof_bckicon_widthheight"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/prof_topicons_padding_leftright"
+                android:src="@drawable/ic_back"
+                app:filterColor="@color/colorPrimary" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                style="@style/PageTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/str_user_setting_edt_profile"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:fontPath="@string/font_roboto_medium" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/top_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_reg_top_linear_margin_top"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dim_reg_top_linear_padding_vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_reg_profile_img_size"
+                android:layout_height="@dimen/dim_reg_profile_img_size">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/register_profile_image"
+                    android:layout_width="@dimen/dim_reg_profile_img_size"
+                    android:layout_height="@dimen/dim_reg_profile_img_size"
+                    android:visibility="visible"
+                    app:civ_border_width="0dp" />
+
+                <com.androidapp.instasocial.ui.CompatImageView
+                    android:id="@+id/imgEditAvatar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_live"
+                    app:filterColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/register_profile_add_image"
+                android:layout_width="@dimen/dim_reg_profile_img_size"
+                android:layout_height="@dimen/dim_reg_profile_img_size"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_add"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/register_upload_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/upload_img"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/login_horiz_margin"
+            android:paddingLeft="@dimen/login_horiz_margin"
+            android:paddingRight="@dimen/login_horiz_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/register_first_edit"
+                    style="@style/InputBoxStyle"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/str_txt_reg_first_name"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_box_margin"
+
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/register_lastname_edit"
+                    style="@style/InputBoxStyle"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/str_txt_reg_last_name"
+                    android:inputType="text"
+
+                    android:maxLength="15"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle"
+                android:visibility="visible">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/register_email_edit"
+                    style="@style/InputBoxStyle"
+                    android:layout_marginTop="@dimen/input_box_margin"
+                    android:hint="@string/str_txt_reg_email"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:textColor="@color/input_state" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle"
+                android:visibility="visible">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/userName"
+                    style="@style/InputBoxStyle"
+                    android:layout_marginTop="@dimen/input_box_margin"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                    android:hint="@string/str_txt_user_name"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/input_state" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/txtCountry"
+                    style="@style/InputBoxStyle"
+
+                    android:hint="@string/str_txt_reg_country"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimaryInvert"
+                    android:textColorHint="@color/colorHint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/txtState"
+                    style="@style/InputBoxStyle"
+                    android:layout_marginTop="@dimen/input_box_margin"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+                    android:hint="@string/str_txt_reg_state"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/register_dataofbirth_edit"
+                    style="@style/InputBoxStyle"
+                    android:layout_gravity="bottom"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:gravity="bottom"
+                    android:hint="@string/str_txt_reg_dob"
+                    android:textSize="@dimen/input_text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:theme="@style/TextInputLayoutStyle">
+
+                <com.androidapp.instasocial.ui.CompatEditText
+                    android:id="@+id/description"
+                    style="@style/InputBoxStyle"
+                    android:hint="@string/str_txt_reg_description"
+                    android:inputType="textCapSentences"
+                    android:lines="3"
+                    android:maxLength="150"
+                    android:maxLines="3"
+                    android:singleLine="false" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                style="@style/InputBoxStyle"
+                android:layout_marginTop="@dimen/input_box_margin"
+                android:text="@string/str_txt_reg_gender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rdoUnspecified"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_txt_reg_unspecify"
+                            android:textSize="@dimen/input_title_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/rdoMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_txt_reg_male"
+                            android:textSize="@dimen/input_title_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/rdoFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_txt_reg_female"
+                            android:textSize="@dimen/input_title_text_size" />
+
+                        <RadioButton
+                            android:id="@+id/rdoIntersed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_txt_reg_inter"
+                            android:textSize="@dimen/input_title_text_size"
+                            android:visibility="gone" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_reg_view_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="@dimen/dim_reg_view_margin_horizontal"
+                android:layout_marginVertical="@dimen/dim_reg_view_margin_vertical"
+                android:background="@color/iron"
+                android:visibility="gone" />
+
+            <com.androidapp.instasocial.ui.CompatTextView
+                android:id="@+id/edtUpdateButton"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_reg_btn_margin_top"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dim_reg_btn_padding_vertical"
+                android:text="@string/str_update"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:fontPath="@string/font_roboto_regular" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

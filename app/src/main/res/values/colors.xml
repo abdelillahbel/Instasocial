@@ -1,0 +1,55 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<resources>
+
+    <!-- Home Button -->
+    <color name="home_button_bubble_text_color">#fff</color>
+    
+	<!-- Action Bar -->    
+    <color name="actionbar_title_color">#ff333333</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="iron">#CCCCCC</color>
+
+
+    <!-- colors-->
+    <color name="black">#000000</color>
+    <color name="blackGray">#747476</color>
+    <color name="lightGray">#d2d1d1</color>
+    <color name="pink">#FF1CF8</color>
+    <color name="sky_blue">#3EBDDE</color>
+    <color name="dark_sky_blue">#208DAA</color>
+    <color name="blue">#b1e1ed</color>
+
+    <color name="action_bar_color">#4b6cb1</color>
+
+
+    <!-- App theme color-->
+    <color name="colorPrimary">#1284ee</color>
+    <color name="colorPrimaryLight">#F2F2F1</color>
+    <color name="colorPrimaryLightDark">#bebebe</color>
+    <color name="colorPrimaryDark">#70b5f5</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorPrimaryInvert">#262628</color>
+    <color name="fbBlue">#3F51A2</color>
+    <color name="light_gray">#999a9b</color>
+    <color name="search_gray">#f5f5f5</color>
+    <color name="colorHint">#9E9C96</color>
+
+    <color name="bottomBarBg">#F7F7F7</color>
+    <color name="bottomBarIcSelected">@color/colorPrimary</color>
+    <color name="bottomBarIcUnSelected">#CFCFCF</color>
+    <color name="view_color_login">#bebbbb</color>
+
+
+    <color name="textgray">#969292</color>
+</resources>

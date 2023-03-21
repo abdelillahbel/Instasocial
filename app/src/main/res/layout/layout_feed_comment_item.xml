@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/comment_repeat_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/commentUsrImage"
+                android:layout_width="@dimen/comment_user_image_width"
+                android:layout_height="@dimen/comment_user_image_width"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginRight="@dimen/comment_repeat_margin"
+                android:src="@drawable/ic_profile_circle_trans"
+                app:actualImageScaleType="focusCrop"
+                app:fadeDuration="300"
+                app:failureImageScaleType="centerInside"
+                app:placeholderImage="@drawable/ic_profile"
+                app:placeholderImageScaleType="fitCenter"
+                app:progressBarAutoRotateInterval="1000"
+                app:progressBarImageScaleType="centerInside"
+                app:retryImageScaleType="fitXY"
+                app:roundAsCircle="true"
+                app:roundBottomLeft="false"
+                app:roundBottomRight="true"
+                app:roundTopLeft="true"
+                app:roundTopRight="false"
+                app:roundedCornerRadius="1dp"
+                app:roundingBorderWidth="2dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/commentUsrImage"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/comment_content_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.androidapp.instasocial.ui.CompatTextView
+                        android:id="@+id/userName"
+                        style="@style/OOThumbTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Name here"
+                        android:textColor="@color/colorPrimaryInvert"
+                        android:textSize="14sp"
+                        app:fontPath="@string/font_roboto_regular" />
+                </LinearLayout>
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/commentUsrTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/userName"
+                    android:layout_marginBottom="@dimen/comment_content_padding"
+                    android:text="sample comment here"
+                    android:textColor="@color/colorPrimaryInvert"
+                    android:textSize="12sp"
+                    app:fontPath="@string/font_roboto_regular" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/commentUsrImage"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutMetaContent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.androidapp.instasocial.ui.CompatTextView
+                            android:id="@+id/txtclock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/comment_content_padding"
+                            android:text="@string/clock_icon"
+                            android:textColor="@color/colorPrimaryLightDark"
+                            android:visibility="gone"
+                            app:fontPath="@string/font_fontawesome" />
+
+                        <com.androidapp.instasocial.ui.CompatTextView
+                            android:id="@+id/commentUsrTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time here"
+                            android:textColor="@color/colorPrimaryLightDark"
+                            android:textSize="12sp"
+                            app:fontPath="@string/font_roboto_regular" />
+
+                        <LinearLayout
+                            android:id="@+id/layoutEditDeleteComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/comment_action_margin_left"
+
+                            android:gravity="right"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="top"
+                                android:paddingLeft="@dimen/comment_action_padding_left"
+                                android:paddingRight="@dimen/comment_action_padding_left">
+
+
+                                <com.androidapp.instasocial.ui.CompatTextView
+                                    android:id="@+id/editComment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/comment_repeat_padding"
+                                    android:text="EDIT"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/comment_txt_size_small"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layoutDelete"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/comment_action_margin_right"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:gravity="center">
+
+                                <com.androidapp.instasocial.ui.CompatTextView
+                                    android:id="@+id/deleteComment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="@dimen/comment_repeat_padding"
+                                    android:text="DELETE"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/comment_txt_size_small"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

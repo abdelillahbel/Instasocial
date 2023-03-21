@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:clickable="false"
+    android:id="@+id/progress_lay"
+    android:visibility="visible"
+    android:layout_height="match_parent">
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        wheel:matProg_barWidth="2dp"
+        wheel:matProg_barColor="@color/colorPrimaryDark"
+        wheel:matProg_progressIndeterminate="true" />
+</RelativeLayout>

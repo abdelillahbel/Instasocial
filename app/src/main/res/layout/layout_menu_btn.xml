@@ -1,0 +1,50 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_btn"
+    android:layout_width="@dimen/navigation_drawer_width"
+    android:layout_height="@dimen/navigation_drawer_width"
+    android:clickable="true">
+
+    <!--android:background="@drawable/menu_selector"-->
+
+    <ImageView
+        android:id="@+id/home_btn_icon"
+        android:layout_width="@dimen/sideBarIconSize"
+        android:layout_height="@dimen/sideBarIconSize"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_home_messages" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryLightDark" />
+
+    <TextView
+        android:id="@+id/home_btn_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/home_button_bubble_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_bubble"
+        android:paddingBottom="@dimen/home_button_bubble_padding_bottom"
+        android:paddingLeft="@dimen/home_button_bubble_padding_left"
+        android:paddingRight="@dimen/home_button_bubble_padding_right"
+        android:paddingTop="@dimen/home_button_bubble_padding_top"
+        android:text=""
+        android:textColor="@color/home_button_bubble_text_color"
+        android:textSize="@dimen/home_button_bubble_text_size"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/icBack"
+            android:layout_width="@dimen/prof_bckicon_widthheight"
+            android:layout_height="@dimen/prof_bckicon_widthheight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/prof_topicons_padding_leftright"
+            android:src="@drawable/ic_back"
+            app:filterColor="@color/colorPrimary" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/PageTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_user_setting_edt_profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:fontPath="@string/font_roboto_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:id="@+id/txtNoData"
+            style="@style/noDataStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No internet"
+            android:visibility="visible" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            app:matProg_barColor="@color/colorPrimaryDark"
+            app:matProg_barWidth="2dp"
+            app:matProg_progressIndeterminate="true" />
+
+    </RelativeLayout>
+</LinearLayout>

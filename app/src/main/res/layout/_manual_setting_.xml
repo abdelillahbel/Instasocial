@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/layoutActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarHeight"
+        android:background="@drawable/bg_action_bar">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/prof_back"
+            android:layout_width="@dimen/prof_bckicon_widthheight"
+            android:layout_height="@dimen/prof_bckicon_widthheight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/prof_topicons_padding_leftright"
+            app:filterColor="@color/colorPrimary"
+            android:src="@drawable/ic_back" />
+
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_user_setting"
+            style="@style/PageTitleStyle"
+            android:textColor="@color/colorPrimary"
+            app:fontPath="@string/font_roboto_medium"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_manual_settings_view_height"
+        android:layout_below="@+id/layoutActionbar"
+        android:background="@color/light_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutPrivateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_manual_settings_padding">
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_manual_setting_is_private"
+                    app:fontPath="@string/font_roboto_regular"
+                    android:textColor="@color/colorPrimaryInvert"
+                    />
+
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/private_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dim_manual_settings_margin_right"
+                    android:checked="false"
+                    android:text=""
+                    android:theme="@style/TextInputLayoutStyle"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_manual_settings_margin_right">
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_manual_setting_receive_push_notification"
+                    android:textColor="@color/colorPrimaryInvert"
+                    app:fontPath="@string/font_roboto_regular"
+                   />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/notify_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dim_manual_settings_padding"
+                    android:checked="false"
+                    android:text=""
+                    android:theme="@style/TextInputLayoutStyle"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerBar"
+        layout="@layout/layout_title_bar" />
+
+    <com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout
+        android:id="@+id/swipe_follow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerBar"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/followersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.androidapp.instasocial.ui.SeamLessViewPager.widget.PullToRefreshLayout>
+
+    <include layout="@layout/layout_progress_dialog" />
+
+    <com.androidapp.instasocial.ui.CompatTextView
+        android:id="@+id/noData"
+        style="@style/noDataStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerBar"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.8.1'
+}
+apply plugin: 'com.android.application'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    defaultConfig {
+        manifestPlaceholders = [onesignal_app_id               : "ed4a8b8e-86c5-415c-9b3e-aed735570c68",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+        applicationId "com.androidapp.instasocial"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    google()
+    maven {
+        url "https://jitpack.io"
+
+    }
+}
+
+dependencies {
+    //jars compilation
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //Design libraries
+    implementation 'com.android.support:support-v4:27.0.0'
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.android.support:design:27.0.0'
+    implementation 'com.google.android.gms:play-services-maps:11.6.0'
+    implementation 'com.github.kanytu:android-parallax-listview:v1.1'
+
+    //Facebook login
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+
+    //Web service call
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+
+    //Image loader
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.facebook.fresco:fresco:1.1.0'
+
+    //Multidex
+    implementation 'com.android.support:multidex:1.0.1'
+
+    //Loader
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+
+    //Crop image
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.5.+'
+    implementation 'com.fenchtose.nocropper:nocropper:0.1.4'
+
+    //Image and video filter
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    implementation project(':videokit')
+
+    //Pull to refresh
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+
+    //One signal
+    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+
+    //Firebase analytics
+    implementation 'com.google.firebase:firebase-core:11.6.0'
+
+    //For Admob
+    implementation 'com.google.android.gms:play-services-ads:11.6.0'
+
+    //Readmore textview
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+
+    //for crash reporting
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.3'
+
+}
+apply plugin: 'com.google.gms.google-services'

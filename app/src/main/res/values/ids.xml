@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<resources>
+    <item type="id" name="actionbar_compat" />
+    <item type="id" name="actionbar_compat_title" />
+    <item type="id" name="actionbar_compat_item_refresh_progress" />
+    <item type="id" name="actionbar_compat_item_refresh" />
+    <item type="id" name="menu_refresh" />
+</resources>

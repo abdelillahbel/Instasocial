@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dim_profile_following_padding"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/imgFollowStatus"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dim_profile_following_img_size"
+            android:id="@+id/userImage"
+            android:layout_height="@dimen/dim_profile_following_img_size" />
+        <com.androidapp.instasocial.ui.CompatTextView
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimaryInvert"
+            android:text="Arora"
+            android:id="@+id/userName"
+            android:layout_marginLeft="@dimen/dim_profile_following_margin_left"
+            android:layout_gravity="center"
+            android:textSize="@dimen/common_txt_size"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.androidapp.instasocial.ui.CompatImageView
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dim_profile_following_padding"
+        android:id="@+id/imgFollowStatus"
+        app:filterColor="@color/colorPrimary"
+        android:src="@drawable/ic_follow"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_action_bar">
+
+        <com.androidapp.instasocial.ui.CompatImageView
+            android:id="@+id/camera_close_img"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:filterColor="@color/colorPrimaryInvert"
+            android:padding="10dp"
+            android:src="@drawable/closeicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PHOTO"
+            android:layout_centerVertical="true"
+            style="@style/MyActionBar.TitleTextStyle" />
+
+        <TextView
+            android:id="@+id/nxt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_selector"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="NEXT"
+            android:textColor="@color/colorPrimaryInvert"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/imagePreview"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryInvert"/>
+
+    <ImageView
+        android:id="@+id/camera_reverse"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_rela"
+        android:padding="10dp"
+        android:src="@drawable/camera_reverse" />
+
+    <ImageView
+        android:id="@+id/switch_flash"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bottom_rela"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_flash" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_rela"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#80000000"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/capture_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rec_btn_selector" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

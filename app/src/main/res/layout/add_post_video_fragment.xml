@@ -1,0 +1,228 @@
+<!--
+  ~ /**
+  ~ * Company : Bsetec
+  ~ * Product: Instasocial
+  ~ * Email : support@bsetec.com
+  ~ * Copyright © 2018 BSEtec. All rights reserved.
+  ~ **/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/mainPotrait"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/imagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/camera_layout"
+                android:background="#000"
+                android:orientation="vertical"
+                android:visibility="gone"></RelativeLayout>
+
+            <TextureView
+                android:id="@+id/textureSurface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/camera_layout"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/camera_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_action_bar">
+
+                <com.androidapp.instasocial.ui.CompatImageView
+                    android:id="@+id/camera_cross_arrow"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/closeicon"
+                    app:filterColor="@color/colorPrimaryInvert"/>
+
+                <com.androidapp.instasocial.ui.CompatTextView
+                    android:id="@+id/next_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIDEO"
+                    android:layout_centerInParent="true"
+                    style="@style/MyActionBar.TitleTextStyle" />
+
+                <TextView
+                    android:id="@+id/use_photo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="NEXT"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:background="#80000000"
+                android:paddingTop="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/start_pause_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/capture_video"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/video_red_btn" />
+
+                    <ImageButton
+                        android:id="@+id/stop_stop"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/btn_cameracapture"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/press_and_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/your_how_orange_rounded_edges"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Press and hold to record"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/popup_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/press_and_hold"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/down_arrow_new"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/special_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_pause_layout"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/paused"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Paused"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/new_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:id="@+id/delete_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:text="DELETE"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/popup_arrow3"
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_camera_reverse"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/timer_text"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:src="@drawable/camera_reverse" />
+
+            <TextView
+                android:id="@+id/timer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progress_video"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/progress_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_layout"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBars"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:indeterminate="false"
+                    android:max="15000"
+                    android:progressDrawable="@drawable/progress_back" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
